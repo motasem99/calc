@@ -8,31 +8,30 @@
     <link rel="stylesheet" href="./css/style.css">
   </head>
   <body>
-      <div class="calculator">
-          <input class="screen" id="screen" value="0">
-          <div class="buttons">
-              <button id="clear" value="">C</button>
-              <button id="backspace" value="-">&#8592</button>
-              <button id="sign" value="+-">&#177;</button>
-              <button id="divide" value="/">÷</button>
-              <button class="degits" value="7">7</button>
-              <button class="degits" value="8">8</button>
-              <button class="degits" value="9">9</button>
-              <button id="multiply" value="*">x</button>
-              <button class="degits" value="4">4</button>
-              <button class="degits" value="5">5</button>
-              <button class="degits" value="6">6</button>
-              <button id="minus" value="-">-</button>
-              <button class="degits" value="1">1</button>
-              <button class="degits" value="2">2</button>
-              <button class="degits" value="3">3</button>
-              <button id="plus" value="+">+</button>
-              <button class="degits" value="0">0</button>
-              <button class="degits" value=".">.</button>
-              <button id="equal" value="=">=</button>
-            </div>
-                </div>
-                <script src="./js/index.js">
-                </script>
-  </body>
-</html>
+    <div class="calculator-grid">
+      <div class="output">
+        <div data-previous-operand class="previous-operand"></div>
+          <div data-current-operand class="current-operand"></div>
+        </div>
+        <button data-all-clear class="span-two">AC</button>
+        <button data-delete>DEL</button>
+        <button data-operation>÷</button>
+        <button data-number>1</button>
+        <button data-number>2</button>
+        <button data-number>3</button>
+        <button data-operation>*</button>
+        <button data-number>4</button>
+        <button data-number>5</button>
+        <button data-number>6</button>
+        <button data-operation>+</button>
+        <button data-number>7</button>
+        <button data-number>8</button>
+        <button data-number>9</button>
+        <button data-operation>-</button>
+        <button data-number>.</button>
+        <button data-number>0</button>
+        <button data-equals class="span-two">=</button>
+      </div>
+      <script src="./js/index.js"></script>
+    </body>
+    </html>
